@@ -1,0 +1,3 @@
+[submodule "libhry"]
+	path = libhry
+	url = https://github.com/ujnss/libhry.git
