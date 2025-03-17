@@ -1,0 +1,15 @@
+name: Arm64-CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check (multi-line script)
+        run: |
+          uname -a
+          arch
+          dpkg --print-architecture
+          lscpu | grep Architecture
