@@ -11,5 +11,4 @@ jobs:
         run: |
           uname -a
           arch
-          dpkg --print-architecture
           lscpu | grep Architecture
