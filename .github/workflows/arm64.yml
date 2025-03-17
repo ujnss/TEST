@@ -4,11 +4,10 @@ on: [push]
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: [macos-latest,ubuntu-22.04-arm]
     steps:
       - uses: actions/checkout@v4
       - name: Check (multi-line script)
         run: |
           uname -a
           arch
-          lscpu | grep Architecture
